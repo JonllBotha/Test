@@ -14,14 +14,4 @@ if __name__ == '__main__':
 
     for link in soup.find_all('a'):
         print("Link:", link.get('href'))
-
-with open('requirements.txt', 'r') as file:
-    file_content = file.read()  
-    pattern = r"^#!/.*python3?$"
-
-    match = re.search(pattern, file_content)
-
-    if match:
-        print("Pattern found in main.py")
-    else:
-        print("Pattern not found in main.py") 
+        
